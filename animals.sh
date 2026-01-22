@@ -2,7 +2,7 @@
 # animals.sh 
 # Jackson Sanders
 
-read -p "Enter an animal in all caps: " animal
+read -rp "Enter an animal in all caps: " animal
 
 while [[ "$animal" != "Goodbye" ]]; do
     case "$animal" in
@@ -19,5 +19,5 @@ while [[ "$animal" != "Goodbye" ]]; do
             echo "Unknown animal."
             ;;
     esac
-    read -p "Enter an animal: " animal
+    read -rp "Enter an animal: " animal
 done
