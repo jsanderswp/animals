@@ -1,13 +1,13 @@
 # README for Animals Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Jackson Sanders
+- **Course:** CPSC 298
 - **Assignment:** Animals Script – Case Statement
-- **Date:** [Date of Completion]
+- **Date:** 01/22/2026
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain how it classifies animals and how the program continues to run until the user types "Goodbye".]
+This program continuosly prompts the user for animals, giving different responses based on what they enter. DOG and CAT is a domestic animal, TIGER is a wild animal, and everything else is an unknown animal.
 
 ## Animal Classification Rules
 This script determines the type of animal according to the following logic:
@@ -28,23 +28,23 @@ To test with an input file (for example, `animals-input`):
 ./animals.sh < animals-input
 ```
 ## How the Script Works
-[Explain in 3-5 sentences how your script works. Include information about:]
-- The use of the while loop to keep asking for user input
-- The case statement that checks the animal name
-- The * wildcard pattern that handles unknown inputs
-- How the loop exits when "Goodbye" is entered
+The user's input is assigned to the animal variable through a read statement. The while loop continues to take user input and respond accordingly until the user types "Goodbye", at which point the loop will break. Within the loop, a case statement compares the user input to different cases including CAT, DOG, and TIGER. The wildcard character * is used for classifying any other user input.
 
 ## Testing Results
-[Describe your testing process and results. Include:]
-- Example valid inputs you tested (at least three, including “DOG”, “CAT”, “TIGER”)
-- Example invalid inputs and why they produce “unknown animal”
-- How you used the animals-input file to test
+CAT - "domestic animal"
+DOG - "domestic animal"
+TIGER - "wild animal"
+cat - "unknown animal" because it needs to be capitalized
+PLATYPUS - "unknown animal" because it is not one of the 3 pre-set animals.
+Goodbye - program ends because it breaks the loop
+
+Used animals-input file in Jenkins to feed it to the code and test automatically.
 
 ## Challenges and Solutions
-[Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding case statements, or Git workflow problems.]
+I had to learn the syntax for the case statements because it is a bit odd with the double semicolons and parentheses, but I was able to figure it out with some Googling
 
 ## Resources
-[List any resources you used (class slides, ChatGPT, etc.). Please refer to the course syllabus for more details on citations.]
+I just Googled my questons and utilized some of the info the AI-generated response provided me with.
 
 ## License
 This project is part of coursework for Chapman University and is intended for educational purposes.
