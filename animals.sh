@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 # animals.sh 
 # Jackson Sanders
 
